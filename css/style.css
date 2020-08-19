@@ -1,0 +1,222 @@
+/** Author: Mobolaji Johnson **/
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+/** Default Styling **/
+html, body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	line-height: 1.7em;
+	margin: auto;
+	background: #444;
+}
+
+a {
+	color: #333;
+	text-decoration: none;
+}
+
+h1, h2, h3 {
+	padding-bottom: 20px;
+}
+
+p {
+	margin: 10px 0;
+}
+
+/** Utility Classes **/
+.container {
+	margin: auto;
+	overflow: auto;
+	padding: 0 20px;
+}
+
+.text-orange {
+	color: orange;
+}
+
+.lead {
+	font-size: 24px;
+}
+
+.btn {
+	display: inline-block;
+	font-size: 20px;
+	color: white;
+	background: #333;
+	padding: 13px 20px;
+	border: none;
+	cursor: pointer;
+}
+
+.btn:hover {
+	background: orange;
+	color: #333;
+}
+
+.btn-light {
+	background: #f4f4f4;
+	color: #333;
+}
+
+.bg-dark {
+	background: #333;
+	color: white;
+}
+
+.bg-light {
+	background: #f4f4f4;
+	color: #333;
+}
+
+.bg-orange {
+	background: orange;
+	color: #333;
+}
+
+
+/* Nav Bar */
+.navbar{
+    background: #14859C;
+    color: white;
+    overflow: auto;
+	border-radius: 5px; 
+	position: fixed;
+	top: 0;
+	width: 100%;
+	
+}
+
+.navbar a{
+    color: wheat;
+}
+
+.navbar h1{
+    float: left;
+    padding-top: 20px;
+}
+
+.navbar ul{
+    list-style: none;
+    float: right;    
+}
+
+.navbar ul li{
+    float: left;
+}
+
+.navbar ul li a{
+    display: block;
+    padding: 20px;
+    text-align: center;
+	font-size: 17px;
+	font-weight: bold;
+}
+
+.navbar ul li a:hover{
+	background: #fff;
+    color: #14859C;	
+}
+.navbar ul li a.active {
+    background: #fff;
+    color: #14859C;
+}
+
+
+/* about */
+#about{
+    height: 500px;
+}
+#about .info-img{
+    float: right;
+    width: 30%;
+    background:url('../assets/mobolaji.jpeg') no-repeat center center/cover;
+	clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    filter: grayscale(40%);
+    min-height: 70%;
+	padding-top: 20px;
+	margin-top: 30px;
+    margin-right:100px;
+	overflow: hidden;
+}
+#about .info{
+    float: left;
+    width: 55%;
+    height: 100%;
+    text-align: justify;
+    padding: 0 30px;
+    overflow: hidden;
+}
+
+#about .info ul{
+    padding-left: 40px;
+}
+
+
+#about h1{
+    margin-top: 100px;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+#about h1#main-name{
+    color: rgba(177, 16, 16, 0.945);
+}
+
+#info{
+    float: left;
+}
+#info ul{
+    margin-left: 40px;
+}
+#about img{
+    float: right;
+    overflow: hidden;
+    width: 29%;   
+}
+
+#about a{
+    background: #fff;
+    color: #fff ;
+    background: rgba(177, 16, 16, 0.945);
+    outline: none;
+    border: none;
+    border-radius: 2px; 
+    padding: 10px;
+    margin-left: 20px; 
+    cursor: pointer;  
+}
+#about a:hover
+{
+    background: rgb(255, 0, 0);
+}
+
+
+/** Home Info **/
+#home-info {
+	height: 400px
+}
+
+#home-info .info-img {
+	float: left;
+	width: 50%;
+	background: url('../assets/bg.png') no-repeat;
+	min-height: 100%;
+
+}
+
+#home-info .info-content {
+	float: right;
+	width: 50%;
+	height: 100%;
+	text-align: center;
+	overflow: hidden;
+	padding: 50px 30px;
+	
+}
+
+#home-info .info-content p {
+	padding-bottom: 30px;
+}
