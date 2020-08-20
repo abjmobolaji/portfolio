@@ -11,7 +11,8 @@ html, body {
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	line-height: 1.7em;
 	margin: auto;
-	background: #eee;
+	background: #aaa;
+	max-width: 1100px;
 }
 
 a {
@@ -43,13 +44,13 @@ p {
 
 .btn {
 	display: inline-block;
-	font-size: 20px;
+	font-size: 17px;
 	color: white;
 	background: #333;
 	padding: 13px 20px;
 	border: none;
+	border-radius: 5px;
 	cursor: pointer;
-	font-weight: bold;
 }
 
 .btn:hover {
@@ -68,7 +69,7 @@ p {
 }
 
 .bg-light {
-	background: #f4f4f4;
+	background: #fff;
 	color: #333;
 }
 
@@ -86,6 +87,7 @@ p {
 	color: #fff;
 	overflow: auto;
 	display: block;
+	max-width: 1100px;
 	
 }
 
@@ -120,6 +122,9 @@ p {
 	font-size: 17px;
 	font-weight: bold;
 }
+#navbar h1 a:hover{
+    color: #fff;	
+}
 
 #navbar ul li a:hover{
 	background: #fff;
@@ -129,12 +134,17 @@ p {
 	color: #222;
 	background: aqua;
 }
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 
 /** Showcase **/
 #showcase {
 	background: url('../assets/bgg35.jpg') no-repeat center center/cover;
 	height: 600px;
-	margin: 10px 0 10px 0;
+	margin: 10px 0 20px 0;
 }
 #showcase .showcase-content {
 	color: #fff;
@@ -191,10 +201,72 @@ p {
 	margin-bottom: 10px;
 }
 
+/** Skills **/
+.skills {
+	background: #444;
+	color: white;
+	padding: 20px;
+	text-align: center;
+	margin: 20px 0 0 0;
+}
+
+.skills h1 {
+	color: aqua;
+	padding: 0px;
+}
+
+.skills-box {
+	padding: 0;
+	background: white;
+}
+
+#skills ul li {
+	list-style: none;
+	font-size: 15px;
+}
+
+
 /** Footer **/
 #main-footer {
 	text-align: center;
-	background: #555;
+	background: #444;
 	color: #FFFFFF;
-	padding:20px;
+	padding:0 0 20px 0;
+	margin: 20px 0 0 0;
+}
+
+#main-footer ul li {
+	list-style: none;
+	float: left;
+	overflow: auto;
+	display: block;
+	padding: 10px 15px;
+	color: white;
+}
+
+#main-footer i {
+	color: white;
+}
+
+#main-footer a {
+	color: white;
+}
+
+#main-footer a:hover {
+	color: aqua;
+}
+
+
+/** Input **/
+input {
+	width: 80%;
+	padding: 10px;
+	margin: 0px 20px;
+	border-radius: 2px;
+}
+
+input:focus{
+	background-color: wheat;
+	color: black;
+	outline: none;
 }
