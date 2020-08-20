@@ -247,6 +247,7 @@ p {
 
 #main-footer i {
 	color: white;
+	align-content: center;
 }
 
 #main-footer a {
@@ -262,7 +263,7 @@ p {
 input {
 	width: 80%;
 	padding: 10px;
-	margin: 0px 20px;
+	margin: 0px 10px;
 	border-radius: 2px;
 }
 
@@ -270,4 +271,42 @@ input:focus{
 	background-color: wheat;
 	color: black;
 	outline: none;
+}
+
+textarea {
+	width: 80%;
+}
+
+.form-control {
+	margin: 0 0 10px 0;
+}
+
+/** Contact **/
+#contact {
+	background: url('../assets/bg45.jpg') no-repeat center center/cover;
+	height: 700px;
+	margin: 10px 0 20px 0;
+}
+#contact .contact-content {
+	color: #fff;
+	text-align: center;
+	padding-top: 100px;
+}
+
+#contact .contact-content h1 {
+	font-size: 70px;
+	line-height: 1.2em;
+}
+
+#contact .contact-content p {
+	padding-bottom: 20px;
+	line-height: 1.7em;
+}
+
+
+/** Media Queries **/
+@media screen and (max-width: 650px) {
+	.box {
+	width: 100%;
+	}
 }
