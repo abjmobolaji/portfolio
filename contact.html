@@ -1,95 +1,99 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, intial-scale=1.0">
-		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-		<meta name="Description" content="Welcome to my Portfolio">
-		<meta name="Keywords" content="Backend developer,web developer,back end developer,website designs,website development,html/css">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, intial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="Description" content="Welcome to my Portfolio">
+	<meta name="Keywords" content="Backend developer,web developer,back end developer,website designs,website development,html/css">
 		
-		<link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
-		<link rel="manifest" href="./favicon/site.webmanifest">
+	<link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+	<link rel="manifest" href="./favicon/site.webmanifest">
 		
-		<link rel="stylesheet" href="./css/all.css">
-		<link rel="stylesheet" href="./css/style.css">
-		
-		<title>Mobolaji Johnson | Backend Developer  </title>
-	</head>
+	<link rel="stylesheet" href="./css/all.css">
+	<link rel="stylesheet" href="./css/style.css">
+	
+	<title>Mobolaji Johnson | Junior Software Developer</title>
+</head>
 
-	<body>
-		<!-- Header -->
-		<header>
-			<!-- Navigation Bar -->
-			<nav id="navbar" class="sticky">
-				<div class="container">
-					<h1 class="logo"><a href="index.html">Mobolaji</a></h1>
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="./index.html#about">About Me</a></li>
-						<li><a href="./index.html#skills">My Skills</a></li>
-						<li><a href="./projects.html">Projects</a></li>
-						<li><a href="./contact.html" class="active">Contact</a></li>
-					</ul>
+<body>
+	<!-- Header -->
+	<header class="section">
+		<!-- Navigation Bar -->
+		<nav>
+    		<ul class="navbar">
+        		<li class="logo"><a href="./index.html">Johnson</a></li>
+        		<li class="item"><a href="./index.html" class="current">Home</a></li>
+        		<li class="item"><a href="./about.html">About</a></li>
+        		<li class="item"><a href="./index.html#skills">My Skills</a></li>
+				<li class="item"><a href="./projects.html">Projects</a></li>
+       			<li class="item button"><a href="./contact.html">Contact Me</a></li>
+        		<li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+    		</ul>
+		</nav>
+	</header>
+		
+	<!-- Contact  -->
+	<section id="contact">
+		<div class="container">
+			<div class="contact-content">
+				<h1><span class="text-primary">Contact</span> ME</h1>
+					<form name="contact" netlify>
+						  <p>
+						  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"  data-rule="minlen:4" data-msg="Please enter at least 4 chars" required/></p>
+
+						  <p><input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" required />                  	
+						  </p>
+
+						  <p><input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"     data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" required/></p>
+
+						  <p><textarea class="form-control" name="message" rows="5"  data-  msg="Please write something for us" placeholder=" Write your message" required></textarea></p>
+
+						 <button type="submit" class="btn">Send Message</button>
+				   </form>
 				</div>
-			</nav>
-			
-		</header>
-		
-<!-- Contact  -->
-<section id="contact">
-	<div class="container">
-		<div class="contact-content">
-			<h1><span class="text-primary">Contact</span> ME</h1>
-                <form name="contact" netlify>
-                      <p>
-                      <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"  data-rule="minlen:4" data-msg="Please enter at least 4 chars" required/></p>
-                    
-                      <p><input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" required />                  	
-                      </p>
-                      
-                      <p><input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"     data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" required/></p>
-                      
-                      <p><textarea class="form-control" name="message" rows="5"  data-  msg="Please write something for us" placeholder="Message" required></textarea></p>
-                   
-                  	 <button type="submit" class="btn">Send Message</button>
-               </form>
 			</div>
-		</div>
-</section>
+	</section>
+
 		
-		
-		<!-- Footer -->	
-		<footer id="main-footer">
-			<div class="box">
+	<!-- Footer -->	
+	<footer class="section" id="footer">
+		<div class="row">
+			<div class="box bg-dark">
 				<h3><span class="text-primary">Contact</span> Me</h3>
 				<i class="fas fa-phone-square fa-2x"></i>
-  				<h4>0703 948 6879</h4><br>
-  				<i class="fas fa-mail-bulk fa-2x"></i>
-  				<h4><a href="mailto:abjmobolaji@gmail.com">abjmobolaji@gmail.com</a></h4>
+				<h4>0703 948 6879</h4><br>
+				<i class="fas fa-mail-bulk fa-2x"></i>
+				<h4><a href="mailto:abjmobolaji@gmail.com">abjmobolaji@gmail.com</a></h4>
 			</div>
-			<div class="box">
+			<div class="box bg-dark">
 				<h3><span class="text-primary">Social</span> Links</h3>
 				<!-- Social Links -->
-    			<ul>
-        			<li><a href="https://www.facebook.com/lebosh33"><i class="fab fa-facebook-square fa-2x"></i></a></li>        			
-        			<li><a href="https://www.github.com/leboshjr"><i class="fab fa-github-square fa-2x"></i></a></li>        			
-        			<li><a href="https://www.linkedin.com/in/mobolaji-fakunle"><i class="fab fa-linkedin fa-2x"></i></a></li>        			
-        			<li><a href="https://twitter.com/leboshjr"><i class="fab fa-twitter-square fa-2x"></i></a></li>
-		       </ul>
+				<ul class="box-item">
+					<li class="footer-item-content"><a href="https://www.facebook.com/lebosh33"><i class="fab fa-facebook-square fa-2x"></i></a></li>        			
+					<li class="footer-item-content"><a href="https://www.github.com/leboshjr"><i class="fab fa-github-square fa-2x"></i></a></li>        			
+					<li class="footer-item-content"><a href="https://www.linkedin.com/in/mobolaji-fakunle"><i class="fab fa-linkedin fa-2x"></i></a></li>        			
+					<li class="footer-item-content"><a href="https://twitter.com/leboshjr"><i class="fab fa-twitter-square fa-2x"></i></a></li>
+				 </ul>
 			</div>
-			<div class="box">
+			<div class="box bg-dark">
 				<!-- Netlify Subscribe Email Section -->
 				<h3><span class="text-primary">Subscribe </span>to my Newsletter</h3>
-      			<form name="newsletter" netlify>
-          			<p><input type="text" name="name" placeholder="Your Name" required></p>
-            		<p><input type="email" name="email" placeholder="Your Email" required/></p>
-                	<button type="submit" class="btn bg-light">Subscribe</button>
-            	</form>			
+				<form name="newsletter" netlify>
+				<p><input type="text" name="name" placeholder="Your Name" required></p>
+				<p><input type="email" name="email" placeholder="Your Email" required/></p>
+				<button type="submit" class="btn bg-light">Subscribe</button>
+				</form>			
 			</div>
-		<div class="clr"></div>
-			<p>Mobolaji Johnson &copy; 2020, All Rights Reserved.</p>
+		</div>
+		
+		<div class="footer-bar"><p>Mobolaji Johnson &copy; 2020, All Rights Reserved.</p></div>
 		</footer>
+		<!-- Javascript -->
+		<script src="./script.js"></script>
+	
 	</body>
 </html>
+
