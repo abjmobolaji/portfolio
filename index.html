@@ -13,12 +13,17 @@
 	<link rel="manifest" href="./favicon/site.webmanifest">
 		
 	<link rel="stylesheet" href="./css/all.css">
+	<link rel="stylesheet" href="./css/loader.css">
 	<link rel="stylesheet" href="./css/style.css">
 	
 	<title>Mobolaji Johnson | Junior Software Developer</title>
 </head>
 
-<body>
+<body onload="myFunction()" style="margin:0;">
+  <!--Loader-->
+  <div id="loader"></div>
+  <!--Body-->
+  <div style="display:none;" id="loadBody" class="animate-bottom">
 	<!-- Header -->
 	<header class="section">
 		<!-- Navigation Bar -->
@@ -37,13 +42,14 @@
 	<!-- Main Section -->
 	<main class="section">
 	
-		<!-- Showcase Menu -->
+	<!-- Showcase Menu -->
 		<div id="showcase">
 			<div class="container">
 				<div class="showcase-content">
-					<h1><span class="text-primary">Mobolaji Johnson</span><br>Junior Software Developer</h1>
+					<h1><span class="text-primary">Mobolaji Johnson</span><br></h1>
+					<h2>Junior Software Developer</h2>
 					<p class="lead">I love to design and develop programs and softwares. A TIIDELab Fellow.</p>
-					<a class="btn" href="#about">About Me</a>
+					<a class="btn" href="./about.html">About Me</a>
 				</div>
 			</div>
 		</div>
@@ -56,7 +62,7 @@
 				<h2><span class="text-primary">About </span>Me</h2>
 				<p>I'm a junior backend developer with comptencies in Web desgin &amp; development and Graphics Design. I love to <span class="text-primary">design</span> business websites, <span class="text-primary">rebrand</span> business assets and <span class="text-primary">develop</span> outstanding solutions to challenging problems. I'm looking forward to work with you. 
 				</p>
-				<a class="btn btn-light" href="#contact">Contact Me</a>
+				<a class="btn btn-light" href="./contact.html">Contact Me</a>
 				
 			</div>
 		</div>	
@@ -64,39 +70,78 @@
 		
 		<!-- Skills Section -->
 		<section id="skills">
+		<div class="skills-header sh-dark"><ul><li><i class="fas fa-code fa-2x" style="color: aqua;"></i>&nbsp;&nbsp; <h2>Services</h2></li></ul></div>
 		<div class="row">
 			<div class="skills-box">
-				<div class="skills-header sh-dark"><ul><li><i class="fab fa-servicestack fa-2x" style="color: aqua;"></i>&nbsp;&nbsp; <h2>Services</h2></li></ul></div>
-					<div class="skills-body sh-light">
-						<h3>Services Rendered:</h3>
-						<ul>
-							<li>Web Design/Development</li>
-							<li>UI/UX Design</li>
-							<li>Networking</li>
-						</ul>
-					</div>
+				<div class="skills-body sh-gray">
+				<table width="100%" border="0">
+				  <tbody>
+					<tr>
+					  <td><h4>HTML</h4></td>
+					  <td><progress max="100" value="85"></progress></td>
+					</tr>
+					<tr>
+					  <td><h4>CSS</h4></td>
+					  <td><progress max="100" value="75"></progress></td>
+					</tr>
+					<tr>
+					  <td><h4>Javascript</h4></td>
+					  <td><progress max="100" value="45"></progress></td>
+					</tr>
+					<tr>
+					  <td><h4>Php</h4></td>
+					  <td><progress max="100" value="55"></progress></td>
+					</tr>
+				  </tbody>
+				</table>						
+
+				</div>
 			</div>
 			<div class="skills-box">
-				<div class="skills-header sh-aqua"><ul><li><i class="fas fa-code fa-2x"></i>&nbsp;&nbsp;<h2 style="color: black;">Skills</h2></li></ul></div>
-					<div class="skills-body sh-gray">
-						<h3>Competencies In:</h3>
+				<div class="skills-body sh-gray">
+				<table width="100%" border="0">
+				  <tbody>
+					<tr>
+					  <td><h4>Python</h4></td>
+					  <td><progress max="100" value="65"></progress></td>
+					</tr>
+					<tr>
+					  <td><h4>Networking</h4></td>
+					  <td><progress max="100" value="75"></progress></td>
+					</tr>
+					<tr>
+					  <td><h4>Microsoft Advancel Excel</h4></td>
+					  <td><progress max="100" value="65"></progress></td>
+					</tr>
+					<tr>
+					  <td><h4>Git/Version Control</h4></td>
+						<td><progress max="100" value="87"></progress></td>
+					</tr>
+				  </tbody>
+				</table>
+				</div>
+			</div>
+			</div>
+			<div class="row">
+			<div class="skills-box">
+				<div class="skills-header sh-aqua"><ul><li><i class="fab fa-servicestack fa-2x"></i>&nbsp;&nbsp;<h2 style="color: black;">Services Rendered</h2></li></ul></div>
+				<div class="skills-body sh-light">
 						<ul>
-							<li>HTML/CSS/Javascript</li>
-							<li>PHP/Python</li>
-							<li>Figma/CorelDraw/Photoshop</li>
+							<li><h4>Website Design/Development</h4></li>
+							<li><h4>UI/UX Design</h4></li>
+							<li><h4>Computer Networking</h4></li>
 						</ul>
-					</div>
+				</div>				
 			</div>
 			<div class="skills-box">
-				<div class="skills-header sh-dark"><ul><li><i class="fas fa-certificate fa-2x" style="color: aqua;"></i>&nbsp;&nbsp;<h2>Stats &amp; Certs.</h2></li></ul></div>
-					<div class="skills-body sh-light">
-						<h3>Professional Certifications Obtained:</h3>
+				<div class="skills-header sh-aqua"><ul><li><i class="fas fa-signal fa-2x"></i>&nbsp;&nbsp;<h2 style="color: black;">Stats</h2></li></ul></div>
+				<div class="skills-body sh-light">
 						<ul>
-							<li>ICT Technology</li>
-							<li>Project Management</li>
-							<li>Microsoft Advanced Excel</li>
+							<li><h4>4 Professional Cerfications</h4></li>
+							<li><h4>6 Projects Completed</h4></li>
+							<li><h4>A TIIDELab Fellow</h4></li>
 						</ul>
-					</div>				
+				</div>	
 			</div>
 			</div>
 		</section>
@@ -165,43 +210,43 @@
 		<div class="section-header"><h1>Moments!!!</h1></div>
 		<section class="masonry">
 		  <div class="brick brick-1">
-			<img class="mansory-img" src="./moments/moment12.jpeg" alt="Moments">
+			<img class="mansory-img" src="./moments/moment10.jpeg" alt="Moments">
 		  </div>
 		  <div class="brick brick-2">
 			<img class="mansory-img" src="./moments/moment12.jpeg" alt="Moments">
 		  </div>
 		  <div class="brick brick-3">
-			<img class="mansory-img" src="./moments/moment12.jpeg" alt="Moments">
+			<img class="mansory-img" src="./moments/moment11.jpeg" alt="Moments">
 		  </div>
 		  <div class="brick brick-4">
-			<img class="mansory-img" src="./moments/moment12.jpeg" alt="Moments">
+			<img class="mansory-img" src="./moments/moment9.jpeg" alt="Moments">
 		  </div>
 		  <div class="brick brick-5">
-			<img class="mansory-img" src="./moments/moment12.jpeg" alt="Moments">
+			<img class="mansory-img" src="./moments/moment5.jpeg" alt="Moments">
 		  </div>
 		  <div class="brick brick-6">
-			<img class="mansory-img" src="./moments/moment12.jpeg" alt="Moments">
+			<img class="mansory-img" src="./moments/moment7.jpeg" alt="Moments">
 		  </div>
 		  <div class="brick brick-7">
-			<img class="mansory-img" src="./moments/moment12.jpeg" alt="Moments">
+			<img class="mansory-img" src="./moments/moment8.jpeg" alt="Moments">
 		  </div>
 		  <div class="brick brick-8">
-			<img class="mansory-img" src="./moments/moment12.jpeg" alt="Moments">
+			<img class="mansory-img" src="./moments/moment6.jpeg" alt="Moments">
 		  </div>    
 		  <div class="brick brick-9">
-			<img class="mansory-img" src="./moments/moment12.jpeg" alt="Moments">
+			<img class="mansory-img" src="./moments/moment5.jpeg" alt="Moments">
 		  </div>
 		  <div class="brick brick-10">
-			<img class="mansory-img" src="./moments/moment12.jpeg" alt="Moments">
+			<img class="mansory-img" src="./moments/moment4.jpeg" alt="Moments">
 		  </div>
 		  <div class="brick brick-11">
-			<img class="mansory-img" src="./moments/moment12.jpeg" alt="Moments">
+			<img class="mansory-img" src="./moments/moment5.jpeg" alt="Moments">
 		  </div>
 		  <div class="brick brick-12">
-			<img class="mansory-img" src="./moments/moment12.jpeg" alt="Moments">
+			<img class="mansory-img" src="./moments/moment11.jpeg" alt="Moments">
 		  </div>
 		  <div class="brick brick-13">
-			<img class="mansory-img" src="./moments/moment12.jpeg" alt="Moments">
+			<img class="mansory-img" src="./moments/moment8.jpeg" alt="Moments">
 		  </div>
 		  <div class="brick brick-14">
 			<img class="mansory-img" src="./moments/moment12.jpeg" alt="Moments">
@@ -243,6 +288,7 @@
 		
 		<div class="footer-bar"><p>Mobolaji Johnson &copy; 2020, All Rights Reserved.</p></div>
 		</footer>
+	</div>
 		<!-- Javascript -->
 		<script src="./script.js"></script>
 	
