@@ -11,8 +11,8 @@ html, body {
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	line-height: 1.7em;
 	margin: auto;
-	background: #aaa;
-	max-width: 1100px;
+	background: #fff;
+	max-width: 1400px;
 	scroll-behavior: smooth;
 }
 
@@ -42,7 +42,7 @@ p {
 }
 
 .text-primary {
-	color: cyan;
+	color: orange;
 }
 
 .lead {
@@ -61,7 +61,7 @@ p {
 }
 
 .btn:hover {
-	background: aqua;
+	background: orange;
 	color: #333;
 }
 
@@ -81,12 +81,12 @@ p {
 }
 
 .bg-primary {
-	background: aqua;
+	background: orange;
 	color: #333;
 }
 
 .section-header {
-	background: #444;
+	background: #232323;
 	color: white;
 	padding: 20px;
 	text-align: center;
@@ -94,7 +94,7 @@ p {
 }
 
 .section-header h1 {
-	color: aqua;
+	color: white;
 	padding: 0px;
 }
 
@@ -176,7 +176,7 @@ textarea {
 
 .current {
 	color: #222;
-	background: aqua;
+	background: orange;
 }
 
 .item.button {
@@ -185,7 +185,7 @@ textarea {
 
 .item:not(.button) a:hover,
 .item a:hover::after {
-	background: aqua;
+	background: orange;
     color: #333;	
 }
 
@@ -202,7 +202,7 @@ textarea {
 }
 
 #footer a:hover {
-	color: aqua;
+	color: orange;
 }
 
 .footer-bar {
@@ -221,7 +221,7 @@ textarea {
 /** Showcase **/
 /*======================*/
 #showcase {
-	background: url('../assets/bgg35.jpg') no-repeat center center/cover;
+	background: url('../assets/site.jpg') no-repeat center center/cover;
 	height: 500px;
 	margin: 0px 0 10px 0;
 }
@@ -289,7 +289,7 @@ textarea {
 }
 
 .skills-header h2 {
-	color: aqua;
+	color: orange;
 	padding: 0px;
 	font-size: 25px;
 }
@@ -306,12 +306,12 @@ textarea {
 }
 
 .sh-dark {
-	background: #444;
+	background: #232323;
 	color: #eee;
 }
 
-.sh-aqua {
-	background: aqua;
+.sh-orange {
+	background: orange;
 	color: #222;
 }
 
@@ -326,7 +326,7 @@ textarea {
 }
 
 #skills {
-	margin-top: 10px;
+	margin-top: 15px;
 }
 
 #skills ul li {
@@ -340,7 +340,7 @@ textarea {
 }
 
 .skills-box {
-	flex: 50%;
+	flex: 33%;
 	flex-wrap: wrap;
 	padding: 0px;
 	text-align: center;
@@ -374,7 +374,7 @@ progress[value]::-webkit-progress-value {
          -webkit-linear-gradient(top, 
                                  rgba(255, 255, 255, .25), 
                                  rgba(0, 0, 0, .25)),
-         -webkit-linear-gradient(left, #0e1f1f, aqua);
+         -webkit-linear-gradient(left, #0e1f1f, orange);
   
     border-radius: 2px; 
     background-size: 35px 20px, 100% 100%, 100% 100%;
@@ -447,7 +447,7 @@ progress[value]::-webkit-progress-value {
 /****** Contact *****/
 /*======================*/
 #contact {
-	background: url('../assets/bg45.jpg') no-repeat center center/cover; 
+	background: url('../assets/banner-2.jpg') no-repeat center center/cover; 
 	margin: 0px;
 	padding-bottom: 30px
 }
@@ -481,7 +481,7 @@ progress[value]::-webkit-progress-value {
 }
 
 .contact-box-item i {
-	color:aquamarine;
+	color:orange;
 }
 
 .contact-box-list {
@@ -592,7 +592,7 @@ progress[value]::-webkit-progress-value {
 .dot-container {
   text-align: center;
   padding: 15px;
-  background: aqua;
+  background: #ccc;
 }
 
 .dot {
@@ -750,7 +750,7 @@ progress[value]::-webkit-progress-value {
 }
 
 .logo a:hover {
-	color: aqua;
+	color: orange;
 }
 
 /* Tablet menu */
@@ -778,8 +778,8 @@ progress[value]::-webkit-progress-value {
         margin: 5px 0;
     }
     .button a {
-        background: #0080ff;
-        border: 1px royalblue solid;
+        background:bisque;
+        color: black;
     }
     .button.secondary {
         border: 0;
@@ -792,8 +792,8 @@ progress[value]::-webkit-progress-value {
         text-decoration: none;
     }
     .button:not(.secondary) a:hover {
-        background: royalblue;
-        border-color: darkblue;
+        background: orange;
+        border-color: orange;
     }
 }
 
